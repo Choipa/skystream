@@ -1,0 +1,46 @@
+{
+  "id": "skyf1_provider",
+  "name": "Sky Sports F1",
+  "groups": [
+    {
+      "id": "live_group",
+      "name": "Live",
+      "channels": [
+        {
+          "id": "sky_f1",
+          "name": "Sky Sports F1",
+          "type": "single",
+          "display": "text-below",
+          "description": "Live Stream",
+          "sources": [
+            {
+              "id": "default_source",
+              "name": "HLS",
+              "contents": [
+                {
+                  "id": "live_content",
+                  "name": "Live",
+                  "streams": [
+                    {
+                      "id": "stream1",
+                      "name": "HLS",
+                      "stream_links": [
+                        {
+                          "id": "link1",
+                          "name": "Default",
+                          "type": "hls",
+                          "default": true,
+                          "url": "https://hakunamatata5.org:8088/hls/sky-f1.m3u8"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
