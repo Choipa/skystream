@@ -1,32 +1,36 @@
 {
-  "id": "skyf1_provider",
+  "id": "skyf1",
   "name": "Sky Sports F1",
+  "color": "#ff6600",
+  "description": "Sky Sports F1 Live",
   "groups": [
     {
-      "id": "live_group",
+      "id": "live",
       "name": "Live",
+      "display": "vertical",
+      "grid_number": 2,
       "channels": [
         {
-          "id": "sky_f1",
+          "id": "sky_f1_channel",
           "name": "Sky Sports F1",
-          "type": "single",
-          "display": "text-below",
           "description": "Live Stream",
+          "type": "single",
+          "display": "thumbnail-only",
           "sources": [
             {
-              "id": "default_source",
-              "name": "HLS",
+              "id": "sky_f1_source",
+              "name": "Default",
               "contents": [
                 {
-                  "id": "live_content",
+                  "id": "sky_f1_content",
                   "name": "Live",
                   "streams": [
                     {
-                      "id": "stream1",
+                      "id": "sky_f1_stream",
                       "name": "HLS",
                       "stream_links": [
                         {
-                          "id": "link1",
+                          "id": "sky_f1_link",
                           "name": "Default",
                           "type": "hls",
                           "default": true,
