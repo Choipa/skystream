@@ -1,3 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="sky.f1" tvg-name="Sky Sports F1" tvg-logo="https://upload.wikimedia.org/wikipedia/en/3/3e/Sky_Sports_F1_logo.png" group-title="Sports",Sky Sports F1
+#EXTINF:-1, Sky Sports F1
+
 https://hakunamatata5.org:8088/hls/sky-f1.m3u8
