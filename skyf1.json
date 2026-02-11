@@ -1,37 +1,46 @@
 {
   "id": "skyf1",
+  "url": "https://choipa.github.io/skystream/",
   "name": "Sky Sports F1",
   "color": "#ff6600",
   "description": "Sky Sports F1 Live",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/3e/Sky_Sports_F1_logo.png"
+  },
   "groups": [
     {
-      "id": "live",
+      "id": "live_group",
       "name": "Live",
       "display": "vertical",
       "grid_number": 2,
       "channels": [
         {
-          "id": "sky_f1_channel",
+          "id": "skyf1_channel",
           "name": "Sky Sports F1",
           "description": "Live Stream",
+          "image": {
+            "url": "https://upload.wikimedia.org/wikipedia/en/3/3e/Sky_Sports_F1_logo.png",
+            "display": "cover",
+            "shape": "square"
+          },
           "type": "single",
           "display": "thumbnail-only",
           "sources": [
             {
-              "id": "sky_f1_source",
-              "name": "Default",
+              "id": "skyf1_source",
+              "name": "Sky F1",
               "contents": [
                 {
-                  "id": "sky_f1_content",
-                  "name": "Live",
+                  "id": "skyf1_content",
+                  "name": "Sky Sports F1",
                   "streams": [
                     {
-                      "id": "sky_f1_stream",
-                      "name": "HLS",
+                      "id": "skyf1_stream",
+                      "name": "Default",
                       "stream_links": [
                         {
-                          "id": "sky_f1_link",
-                          "name": "Default",
+                          "id": "skyf1_link",
+                          "name": "HLS",
                           "type": "hls",
                           "default": true,
                           "url": "https://hakunamatata5.org:8088/hls/sky-f1.m3u8"
@@ -46,5 +55,9 @@
         }
       ]
     }
-  ]
+  ],
+  "notice": {
+    "id": "notice",
+    "text": "Sky Sports F1 Live"
+  }
 }
